@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: burrnode-gau5
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-burrnode-gau5
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6bd11be0b120033142d72dc51ce6605a05e1748883fbf5faea7d21344f14bb1c
         name: my-nodejs
         ports:
         - containerPort: 3001
