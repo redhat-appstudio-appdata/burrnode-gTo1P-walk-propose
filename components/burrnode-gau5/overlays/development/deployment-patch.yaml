@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: burrnode-gau5
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6bd11be0b120033142d72dc51ce6605a05e1748883fbf5faea7d21344f14bb1c
+        name: my-nodejs
+        resources: {}
+status: {}
